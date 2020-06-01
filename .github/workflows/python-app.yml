@@ -29,9 +29,10 @@ jobs:
           pipenv install
           pipenv run python main.py
           cd ../
-        done          
+        done
     - name: Lint with flake8
       run: |
+        python -m pip install --upgrade flake8
         for folder in */ ; do
           cd $folder
           # stop the build if there are Python syntax errors or undefined names
