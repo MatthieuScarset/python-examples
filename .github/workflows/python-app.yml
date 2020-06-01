@@ -33,6 +33,3 @@ jobs:
           pipenv run python main.py
           cd ../
         done
-    - name: Test with pytest
-      run: |
-        pytest
