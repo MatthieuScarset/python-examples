@@ -1,6 +1,7 @@
 # Get CSV from Url and write to local file.
 # @author Matthieu SCARSET
 # @see https://matthieuscarset.com
+import os
 import sys
 
 import requests
@@ -21,7 +22,7 @@ def main():
         # Read your file now.
         f = open('data.csv', 'r')
         print(f)
-        print('Done')
+        print('Done: %s' % (os.getcwd() + '/' + __file__))
 
 
 if __name__ == "__main__":
